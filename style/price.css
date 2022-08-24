@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "TT_Norms_Pro", -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, "Fira Sans", "Droid Sans",
+    Ubuntu, Cantarell, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+div#heading {
+  height: 250px;
+  border-bottom: 2px solid #acafb6;
+  background-image: url("https://web-static.wrike.com/content/themes/wrike/dist/img/vector/rebranding/price/intro-background.svg?v=10a06b924a");
+  background-color: #f5f2eb;
+  background-repeat: no-repeat;
+  background-size: 120% auto;
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+div#heading > h1 {
+  text-align: center;
+}
+div#tabs {
+  /* border: 1px solid red; */
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+div#tabs > button {
+  border: 2px solid #acafb6;
+  border-bottom: none;
+  width: calc(85% / 3);
+  height: 50px;
+  font-size: 20px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
+}
+div#tabs > .active_btn {
+  border-top: 3px solid #51e8d4;
+  box-shadow: 0px 4px 0px -2px white;
+}
+/* div#tabs > button:focus {
+  border-top: 3px solid #51e8d4;
+  box-shadow: 0px 4px 0px -2px white;
+} */
+div.all_tab {
+  /* border: 1px solid red; */
+  display: none;
+}
+div.active_tab {
+  display: block;
+}
+
+div.plans_tab {
+  width: 95%;
+  border: 2px solid red;
+  margin: auto;
+  overflow: hidden;
+}
+div.plan_slider {
+  display: flex;
+  width: fit-content;
+  gap: 1.5vw;
+}
+div.plan_cards {
+  border: 2px solid #acafb6;
+  border-radius: 7px;
+  width: calc(90vw / 4);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  gap: 25px;
+}
+div.plan_cards > h4 {
+  font-size: 28px;
+}
+div.plan_cards > button {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: transparent;
+  color: #04454d;
+  border: 2px solid #04454d;
+}
+div.plan_cards > button:hover {
+  background-color: #04454d;
+  color: white;
+  transition: 300ms;
+}
