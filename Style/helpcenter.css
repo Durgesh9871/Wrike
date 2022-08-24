@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: TT_Norms_Pro, -apple-system, BlinkMacSystemFont, Helvetica Neue,
+    Segoe UI, Roboto, Oxygen-Sans, Fira Sans, Droid Sans, Ubuntu, Cantarell,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+#nav {
+  height: auto;
+  background-color: #04454d;
+  color: white;
+  padding: 0px 0;
+}
+.nav_items {
+  width: 80%;
+  height: 70px;
+  /* border: 2px solid blue; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.left_nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+  /* border: 2px solid yellow; */
+}
+.left_nav span {
+  margin-left: 5px;
+  font-size: 20px;
+  font-weight: 100;
+  color: white;
+}
+
+.right_nav {
+  /* border: 2px solid teal; */
+  display: flex;
+  align-items: center;
+}
+#select_country {
+  background-color: #04454d;
+  border: none;
+  outline: none;
+  color: #ffffff;
+}
+#select_country option {
+  background-color: #ffffff;
+  color: #7b8fac;
+}
+#country {
+  display: flex;
+  align-items: center;
+}
+.nav_btn {
+  margin-left: 15px;
+  color: #08cf65;
+  outline: none;
+  border: 3px solid #08cf65;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #04454d;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 20px;
+}
+.nav_btn:hover {
+  background-color: #08cf65;
+  color: #04454d;
+}
+.nav_btn a {
+  text-decoration: none;
+  color: #08cf65;
+}
+.nav_btn a:hover {
+  background-color: #08cf65;
+  color: #04454d;
+}
+/* #globe {
+  font-size: 20px;
+  cursor: pointer;
+} */
+.globe:hover {
+  color: #08cf65;
+  cursor: pointer;
+}
+/* .................................................................. */
+section {
+  background-color: #04454d;
+  /* background-color: #08cf65; */
+}
+.search_section {
+  width: 80%;
+  /* border: 2px solid red; */
+  margin: auto;
+  text-align: center;
+  padding: 60px 0px;
+}
+.search_section h1 {
+  color: white;
+  font-size: 50px;
+}
+#search_input input[type="text"] {
+  margin-top: 60px;
+  padding: 18px;
+  width: 50%;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  font-size: 17px;
+}
+.search_btn {
+  padding: 18px 60px;
+  background-color: #08cf65;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+.search_btn:hover {
+  background-color: #09a753;
+}
+
+/* ................................................................................ */
+
+.grid-column {
+  width: 80%;
+  margin: auto;
+  /* border: 2px solid black; */
+  background-color: #ffffff;
+  /* margin-top: 80px; */
+}
+.grid-column h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 60px 0;
+}
+.cards-gc4,
+.cards-gc3,
+.cards-ds-gc3 {
+  /* border: 2px solid teal; */
+  padding: 40px 30px;
+  border-radius: 4px;
+}
+.cards-gc3 {
+  background-color: #ebf5f3;
+}
+.cards-gc4 i,
+.cards-gc3 i,
+.cards-ds-gc3 i {
+  font-size: 60px;
+  color: #08cf65;
+}
+.cards-gc4 h2,
+.cards-gc3 h2,
+.cards-ds-gc3 h2 {
+  margin-top: 40px;
+}
+.cards-gc4 p,
+.cards-gc3 p,
+.cards-ds-gc3 p {
+  margin-top: 30px;
+}
+.cards-gc4:hover,
+.cards-gc3:hover,
+.cards-ds-gc3:hover {
+  background-color: #04454d;
+  color: white;
+  cursor: pointer;
+}
+#cards-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  /* border: 2px solid red; */
+}
+
+#cards-3 {
+  width: 80%;
+  margin: auto;
+  /* border: 2px solid black; */
+}
+.cards-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  /* border: 2px solid red; */
+}
+#discover_section {
+  /* margin-top: 200px; */
+  background-color: #ebedf5;
+  padding-bottom: 100px;
+}
+.cards-ds-gc3 {
+  background-color: #ffffff;
+}
+#discover_heading {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 100px;
+  padding: 80px 0;
+}
+#footer {
+  background-color: #0c3245;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+#left_footer i {
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+#left_footer i:hover {
+  color: #08cf65;
+}
+#right_footer span {
+  color: #7b8fac;
+}
+#right_footer a {
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  line-height: 20px;
+}
+#right_footer a:hover {
+  color: #7b8fac;
+}
+#float_right {
+  float: right;
+}
+
+@media all and (min-width: 700px) and (max-width: 900px) {
+}

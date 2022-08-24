@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: TT_Norms_Pro, -apple-system, BlinkMacSystemFont, Helvetica Neue,
+    Segoe UI, Roboto, Oxygen-Sans, Fira Sans, Droid Sans, Ubuntu, Cantarell,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+#current_page {
+  background-color: #ebf5f3;
+}
+.page_desc {
+  width: 80%;
+  margin: auto;
+  /* border: 2px solid black; */
+  padding: 25px 0px;
+}
+.page_desc a,
+span {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #017860;
+}
+.page_desc a:hover {
+  border-bottom: 2px solid #099378;
+  color: #099378;
+}
+#ticket_form > h1 {
+  text-align: center;
+  margin: 40px 0px;
+  font-size: 40px;
+}
+#form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  margin: auto;
+}
+#form input {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 18px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: none;
+  font-weight: 400;
+  border: 2px solid rgb(158, 157, 157);
+  /* outline: none; */
+  outline-color: #7b8fac;
+}
+
+#form textarea {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  /* outline: none; */
+  padding: 15px 10px;
+}
+#help_options {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  outline: none;
+  padding: 15px 10px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.btn-warning {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #ffffff;
+  border: none;
+  border: 2px solid #565b65;
+  border-radius: 4px;
+  color: #7f8795;
+}
+.btn-warning:hover {
+  background-color: #017860;
+  color: white;
+  cursor: pointer;
+  border-color: #017860;
+}
+.btn-warning input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(3);
+  opacity: 0;
+}
+.btn-warning i {
+  /* color: rgb(59, 58, 58); */
+  font-size: 25px;
+  font-weight: 400;
+}
+.btn-warning i:hover {
+  color: white;
+}
+.submit_btn {
+  text-align: center;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin: 60px 0;
+  border: none;
+  border: 2px solid #565b65;
+  cursor: pointer;
+}
+

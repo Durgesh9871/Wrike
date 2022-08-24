@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Style/helpcenter.css" />
+    <link rel="stylesheet" href="Style/ticket_form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="nav"></div>
+      <div id="current_page">
+        <div class="page_desc">
+          <a href="index.html">Wrike Help Center</a>
+          <span>> Submit a request</span>
+        </div>
+      </div>
+
+      <div id="ticket_form">
+        <h1>Submit a Ticket</h1>
+        <div id="form">
+            <input type="email" id="email" placeholder="Your email address" onkeyup="isEmpty()" />
+            <input type="text" id="subject" placeholder="Subject" onkeyup="isEmpty()"/>
+            <textarea id="desc" cols="30" rows="10" onkeyup="isEmpty()"></textarea>
+            <label>What do you need help with?</label>
+            <select id="help_options" onchange="isEmpty()">
+              <option value="">-</option>
+              <option value="Accessing Wrike">Accessing Wrike</option>
+              <option value="Wrike Analyze">Wrike Analyze</option>
+              <option value="API & Integrations">API & Integrations</option>
+              <option value="Core Product Features">
+                Core Product Features
+              </option>
+              <option value="Billing">Billing</option>
+              <option value="Other Question">Other Question</option>
+            </select>
+            <button type="button" class="btn-warning">
+              <i class="fa fa-paperclip" aria-hidden="true"></i>
+                Add file or drop files here</i
+              >
+              <input type="file"/>
+            </button>
+            <button class="submit_btn" id="submit_btn" disabled>Submit</button>
+        </div>
+      </div>
+    </header>
+    <footer>
+      <div id="footer"></div>
+    </footer>
+  </body>
+</html>
+<script type="module">
+  import navbar from "/components/header.js";
+  let nav_container = document.getElementById("nav");
+  nav_container.innerHTML = navbar();
+
+  import { footer } from "/components/footer.js";
+  let footer_container = document.getElementById("footer");
+  footer_container.innerHTML = footer();
+</script>
+<script src="script/ticket_form.js"></script>
