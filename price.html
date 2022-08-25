@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/price.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Plans and Pricing | Wrike</title>
   </head>
   <body>
@@ -16,8 +23,15 @@
     </div>
     <!-- tab Section -->
     <div id="tab_section">
-      <!-- price -->
-      <div class="plans_tab all_tab"></div>
+      <!-- plans -->
+      <div class="active_tab plans_tab all_tab"></div>
+      <!-- Scoll button -->
+      <div id="sliding_btn">
+        <button id="right_arrow"><span>See Pinnacle</span></button>
+        <button style="display: none" id="left_arrow">
+          <span>See Free</span>
+        </button>
+      </div>
       <!-- marketing -->
       <div class="marketing_tab all_tab">
         <h2>Marketing</h2>
@@ -27,6 +41,8 @@
         <h2>Service</h2>
       </div>
     </div>
+    <!-- Popup email section -->
+    <div class="popup_email" id="popup_email"></div>
   </body>
 </html>
 <script src="script/price.js"></script>
