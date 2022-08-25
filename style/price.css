@@ -57,15 +57,16 @@ div.active_tab {
 }
 
 div.plans_tab {
-  width: 95%;
-  border: 2px solid red;
-  margin: auto;
+  width: 96%;
+  /* border: 2px solid red; */
+  margin: 35px auto;
   overflow: hidden;
 }
 div.plan_slider {
   display: flex;
   width: fit-content;
   gap: 1.5vw;
+  transition: 300ms ease-in;
 }
 div.plan_cards {
   border: 2px solid #acafb6;
@@ -76,6 +77,7 @@ div.plan_cards {
   justify-content: flex-end;
   padding: 20px;
   gap: 25px;
+  background-color: white;
 }
 div.plan_cards > h4 {
   font-size: 28px;
@@ -89,9 +91,141 @@ div.plan_cards > button {
   background-color: transparent;
   color: #04454d;
   border: 2px solid #04454d;
+  margin-top: auto;
 }
 div.plan_cards > button:hover {
   background-color: #04454d;
   color: white;
   transition: 300ms;
+}
+
+button.try_free {
+  background-color: #08cf65 !important;
+  border: 2px solid #08cf65 !important;
+  color: white !important;
+}
+button.try_free:hover {
+  background-color: #04ba71 !important;
+  border: 2px solid #04ba71 !important;
+}
+
+div#sliding_btn > button {
+  /* border: 2px solid red; */
+  /* transform: rotate(90deg); */
+  position: absolute;
+  margin-top: -315px;
+  background-color: #04454d;
+  height: 150px;
+  padding: 0 10px;
+  border: none;
+}
+button#left_arrow {
+  left: 0;
+  /* transform: translate(-50%, -50%); */
+}
+button#right_arrow {
+  right: 0;
+  /* transform: translate(-50%, -50%); */
+}
+div#sliding_btn > button > span {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.popup_box {
+  /* border: 1px solid black; */
+  width: 40%;
+  padding: 0 20px 20px 20px;
+  text-align: center;
+  /* position: fixed; */
+  margin: auto;
+  display: block;
+  transform: translate(0%, 50%);
+  right: 10%;
+  background-color: white;
+  border-radius: 7px;
+  z-index: 1;
+  visibility: hidden;
+}
+.popup_email {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  display: block;
+  visibility: hidden;
+}
+.show_popup {
+  visibility: visible;
+}
+.popup_box > * {
+  margin: 20px auto;
+}
+.popup_box > div > span {
+  /* border: 1px solid black; */
+  display: inline-block;
+  transform: rotate(45deg);
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 0 0 97%;
+}
+.popup_box > button,
+.popup_box > input {
+  display: block;
+  margin: 10 auto;
+  width: 100%;
+  height: 40px;
+}
+.popup_box > button {
+  background-color: #08cf65;
+  border: none;
+  font-size: 20px;
+  color: white;
+}
+
+div.feature_container {
+  display: flex;
+  gap: 1.5vw;
+  transition-duration: 0.3s;
+}
+.plan_features::before {
+  content: "\f058";
+  margin-right: 5px;
+  font-family: "Font Awesome 6 Free";
+  color: green;
+}
+div.hide_feature {
+  margin-top: -150px;
+  display: none;
+}
+
+button.feature_button {
+  display: block;
+  margin: 60px auto;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #0a615a;
+}
+
+button.feature_button > span {
+  /* border: 1px solid black; */
+  margin-left: 25px;
+  transition-duration: 0.5s;
+}
+
+div.plans_banner {
+  margin: 60px auto;
+  border-radius: 7px;
+  /* height: 130px; */
+  text-align: center;
+  padding: 50px;
+  background-color: #ebf5f3;
+  background-image: url("https://web-static.wrike.com/content/themes/wrike/dist/img/vector/rebranding/price/banner-background-left.svg?v=9a00b45536");
 }
