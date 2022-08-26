@@ -13,7 +13,22 @@
   </head>
   <body>
     <header>
-      <div id="nav"></div>
+      <div id="nav">
+        <!-- <div class="nav_items">
+          <div class="left_nav">
+            <img
+              src="https://www.erpsuggest.com/assets/static/images/logos/wrike-logo-square.png"
+              alt="logo"
+            />
+            <span>help center</span>
+          </div>
+          <div class="right_nav">
+            <i class="fa fa-globe" id="globe" aria-hidden="true"> En</i>
+            <button class="nav_btn">Submit a Request</button>
+            <button class="nav_btn">Sign in with Wrike</button>
+          </div>
+        </div> -->
+      </div>
     </header>
 
     <section>
@@ -24,8 +39,13 @@
             type="text"
             id="query"
             placeholder="e.g. Gantt chart, creating projects..."
+            onkeyup="search()"
           />
-          <button onclick="searchFun()" class="search_btn">Search</button>
+
+          <button onclick="searchFun()" class="search_btn" id="search">
+            Search
+          </button>
+          <ul class="searchResult" id="searchResult"></ul>
         </div>
       </div>
     </section>
@@ -34,6 +54,7 @@
         <h1>Learn Wrike the way it fits you best</h1>
         <div id="cards-4">
           <div class="cards-gc4">
+            <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
             <img
               src="https://theme.zdassets.com/theme_assets/505577/eef8c2cde6bb8ccd703827ce0c6901462a1be0bd.svg"
               alt=""
@@ -42,6 +63,7 @@
             <p>Learn wrike by doing</p>
           </div>
           <div class="cards-gc4">
+            <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
             <img
               src="https://theme.zdassets.com/theme_assets/505577/adc4ea72ee92f7969880154baecb561ed6c6cb77.svg"
               alt=""
@@ -50,6 +72,7 @@
             <p>Watch feature overviews and how-tos</p>
           </div>
           <div class="cards-gc4">
+            <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
             <img
               src="https://theme.zdassets.com/theme_assets/505577/2ac19e43eeb35cb052a3eb9242a3eba2b2e484ad.svg"
               alt=""
@@ -58,6 +81,7 @@
             <p>Stay upto date with our latest releases</p>
           </div>
           <div class="cards-gc4">
+            <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
             <img
               src="https://theme.zdassets.com/theme_assets/505577/4d6837d6e0dd89f5e3754e6e6b45c5de9fb90008.svg"
               alt=""
@@ -70,6 +94,7 @@
         <h1>Wrike Knowledge Base</h1>
         <div class="cards-3">
           <div class="cards-gc3">
+            <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
             <img
               src="https://theme.zdassets.com/theme_assets/505577/55ecaa559723f30d4515bd009e3b7d7050f284b0.svg"
               alt=""
@@ -78,6 +103,7 @@
             <p>New to Wrike and the New Wrike Experience? We'll help!</p>
           </div>
           <div class="cards-gc3">
+            <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
             <img
               src="https://theme.zdassets.com/theme_assets/505577/3d0e1aef102f700f0ebd2e25edfe008dae8c9412.svg"
               alt=""
@@ -86,6 +112,7 @@
             <p>Discover how to use Wrike's fundamental features.</p>
           </div>
           <div class="cards-gc3">
+            <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
             <img
               src="https://theme.zdassets.com/theme_assets/505577/73c8c178daaf45abcda59c36f96f7e7cd0be9dbb.svg"
               alt=""
@@ -97,6 +124,7 @@
             </p>
           </div>
           <div class="cards-gc3">
+            <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
             <img
               src="https://theme.zdassets.com/theme_assets/505577/5108dcaaf100989b68961f1b648ad082e9acf4a9.svg"
               alt=""
@@ -108,6 +136,7 @@
             </p>
           </div>
           <div class="cards-gc3">
+            <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
             <img
               src="https://theme.zdassets.com/theme_assets/505577/4b6400f4f52658987aa312472db43e939ef8fa95.svg"
               alt=""
@@ -119,6 +148,7 @@
             </p>
           </div>
           <div class="cards-gc3">
+            <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
             <img
               src="https://theme.zdassets.com/theme_assets/505577/17609e50b14b319c69e6875f7c2771bd3b032611.svg"
               alt=""
@@ -130,6 +160,7 @@
             </p>
           </div>
           <div class="cards-gc3">
+            <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
             <img
               src="https://theme.zdassets.com/theme_assets/505577/4ce694a92bfe1d4908d218bf6beae4527acea56c.svg"
               alt=""
@@ -141,6 +172,7 @@
             </p>
           </div>
           <div class="cards-gc3">
+            <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
             <img
               src="https://theme.zdassets.com/theme_assets/505577/6b36f6c1866727dd9c52bb9a0baf7c8209a9e295.svg"
               alt=""
@@ -152,6 +184,7 @@
             </p>
           </div>
           <div class="cards-gc3">
+            <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
             <img
               src="https://theme.zdassets.com/theme_assets/505577/4d6fbdeb22223cf4cd1439ebc68faa92336aae1f.svg"
               alt=""
@@ -168,6 +201,7 @@
         <h1 id="discover_heading">Discover all sources</h1>
         <div class="cards-3" id="cards-3">
           <div class="cards-ds-gc3">
+            <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
             <img
               src="https://theme.zdassets.com/theme_assets/505577/305cab1387b81cad13e76827569dceb76399b132.svg"
               alt=""
@@ -176,6 +210,7 @@
             <p>Helping you get the most out of Wrike.</p>
           </div>
           <div class="cards-ds-gc3">
+            <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
             <img
               src="https://theme.zdassets.com/theme_assets/505577/2f2d9d19e6ecc58cdef635358745c9ba86f219f5.svg"
               alt=""
@@ -184,6 +219,7 @@
             <p>Get started with Wrike's API</p>
           </div>
           <div class="cards-ds-gc3">
+            <!-- <i class="fa fa-users" aria-hidden="true"></i> -->
             <img
               src="https://theme.zdassets.com/theme_assets/505577/e45e5e11410b1ea3729c1ab644f25a3e8ab20182.svg"
               alt=""
