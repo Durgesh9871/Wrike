@@ -11,7 +11,7 @@
 }
 #search_results_filter {
   width: 30%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 800px;
   padding: 40px;
 }
@@ -33,13 +33,13 @@
 }
 #search_results_section {
   width: 70%;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   height: auto;
 }
 #search_results_section_center {
   width: 90%;
   margin: auto;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 50px;
 }
 .search_results_list li {

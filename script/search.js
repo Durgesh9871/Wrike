@@ -10,13 +10,14 @@ function append(searchItemLS) {
     // list_item.innerText = elem.strMeal;
 
     let title = document.createElement("h2");
-    title.innerText = elem.strMeal;
+    title.innerText = elem.title;
 
-    let area = document.createElement("p");
-    area.innerText = elem.strArea;
+    let desc = document.createElement("p");
+    desc.innerText = elem.description;
 
-    list_item.append(title, area);
+    list_item.append(title, desc);
     ul.append(list_item);
   });
 }
 append(searchItemLS);
+

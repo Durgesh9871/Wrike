@@ -30,18 +30,18 @@
         </div> -->
       </div>
     </header>
-
     <section>
       <div class="search_section">
         <h1>What can we help you with ?</h1>
         <div id="search_input">
           <input
+            onblur="hideList()"
+            onfocus="showList()"
+            onkeyup="search()"
             type="text"
             id="query"
             placeholder="e.g. Gantt chart, creating projects..."
-            onkeyup="search()"
           />
-
           <button onclick="searchFun()" class="search_btn" id="search">
             Search
           </button>

@@ -1,45 +1,46 @@
 let searchResult = document.getElementById("searchResult");
-let searchInput = document.getElementById("query").value;
-// let ul = document.getElementById("searchResult");
-let list = document.getElementById("unorderedList");
+let searchInput = document.getElementById("query");
 
 async function search() {
+  const value = searchInput.value;
+  console.log({ value });
+  const API = `https://dummyjson.com/products/search?q=${value}`;
   try {
-    let res = await fetch(
-      `https://themealdb.com/api/json/v1/1/search.php?s=${searchInput}`
-    );
-    let data = await res.json();
-    let actual_data = data.meals;
-    console.log(actual_data);
-    localStorage.setItem("searchItem", JSON.stringify(actual_data));
-    append(actual_data);
+    let res = await fetch(API);
+    let { products } = await res.json();
+
+    console.log({ products });
+    localStorage.setItem("searchItem", JSON.stringify(products));
+    append(products);
   } catch (error) {
-    console.log(error);
+    console.log({ error });
   }
 }
 
-let append = (data) => {
+function showList() {
+  searchResult.style.display = "block";
   searchResult.innerHTML = "";
-  data.forEach((elem) => {
-    let list_item = document.createElement("li");
+}
 
-    let link = document.createElement("a");
-    link.href = elem.strYoutube;
-    link.innerText = elem.strMeal;
-    // list_item.innerText = elem.strMeal;
+function hideList() {
+  searchResult.style.display = "none";
+}
 
-    list_item.append(link);
-    searchResult.append(list_item);
-    // ul.innerHTML = list_item;
-    // list.append(x);
+let append = (data) => {
+  console.log({ data });
+  let items = "";
+  //searchResult.innerHTML = "";
+  data.forEach((item) => {
+    const li = `<li class='item'>${item.title}</li>`;
+    items += li;
   });
+  console.log({ items });
+  searchResult.innerHTML = items;
 };
 
 function searchFun() {
-  // window.location.href = "search.html";
+  if (searchInput.value !== "") {
+    window.location.href = "search.html";
+  }
   // localStorage.setItem("searchItem", JSON.stringify);
 }
-
-// if (searchInput !== "") {
-//   searchResult.style.display = "block";
-// }
