@@ -1,112 +1,111 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
-#navbar{
-    border: 1px solid red;
-    width: 100%;
-    height: 100px;
+#navbar {
+  border: 1px solid red;
+  width: 100%;
+  height: 100px;
 }
 header {
-    border: 1px solid blue;
-    width: 100%;
-    height: 550px;
-    background-image:url("./two.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  main {
-    border: 1px solid black;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* color: white; */
-  }
-  
-  section h3 {
-    border: 1px solid black;
-    font-size: 35px;
-    font-weight: 100;
-    letter-spacing: 3px;
-    text-shadow: 1px 1px 2px black;
-  }
-  
-  section h1 {
-    border: 1px solid black;
-    /* margin: 30px 0 20px 0; */
-    font-size: 55px;
-    font-weight: 700;
-    /* text-shadow: 2px 1px 5px black; */
-  }
-  
-  section p {
-    border: 1px solid pink;
-    font-size: 25px;
-    word-spacing: 2px;
-    /* margin-bottom: 25px; */
-    text-shadow: 1px 1px 1px black;
-  }
-  
-  section a {
-    padding: 12px 30px;
-    border-radius: 4px;
-    outline: none;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 500;
-    text-decoration: none;
-    letter-spacing: 1px;
-    transition: all 0.5s ease;
-  }
-   section input {
-    
-    padding: 30px 100px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 700;
-    text-decoration: none;
-    letter-spacing: 1px;
-    transition: all 0.5s ease;
-  } 
+  border: 1px solid blue;
+  width: 100%;
+  height: 550px;
+  background-image: url("./two.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main {
+  border: 1px solid black;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* color: white; */
+}
 
-  section .btntwo {
-    /* border: 3px solid blue; */
-    background: green;
-    color: white;
-    padding: 30px 30px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .btntwo:hover{
-    background: green;
-    color: #000;
-  }
-  #inputBox{
-    background: white;
-    color: #000;
-  }
-  #inputBox:hover{
-    background: white;
-    color: #000;
-  }
+section h3 {
+  border: 1px solid black;
+  font-size: 35px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+
+section h1 {
+  border: 1px solid black;
+  /* margin: 30px 0 20px 0; */
+  font-size: 55px;
+  font-weight: 700;
+  /* text-shadow: 2px 1px 5px black; */
+}
+
+section p {
+  border: 1px solid pink;
+  font-size: 25px;
+  word-spacing: 2px;
+  /* margin-bottom: 25px; */
+  text-shadow: 1px 1px 1px black;
+}
+
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+section input {
+  padding: 30px 100px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+
+section .btntwo {
+  /* border: 3px solid blue; */
+  background: green;
+  color: white;
+  padding: 30px 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btntwo:hover {
+  background: green;
+  color: #000;
+}
+#inputBox {
+  background: white;
+  color: #000;
+}
+#inputBox:hover {
+  background: white;
+  color: #000;
+}
 /********************* Gartner ********************/
-#third-container{
+#third-container {
   border: 1px solid red;
   display: flex;
   justify-content: center;
-  gap:130px
+  gap: 130px;
 }
-#left,#right{
-    border: 1px solid red;
-    height: 600px;
-    width: 600px;
-   
+#left,
+#right {
+  border: 1px solid red;
+  height: 600px;
+  width: 600px;
 }
-#left img{
+#left img {
   display: flex;
   justify-content: center;
   margin-left: auto;
@@ -114,44 +113,40 @@ header {
   width: 50%;
   margin-top: 100px;
 }
-#citrix-wrike-box{
-   /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
-   margin-left: auto;
-   margin-top: 50px;
-   margin-right: auto;
-   /* border: 1px solid red; */
-    height: 250px;
-    width: 350px;
-   background-color: #ebf5f3;
-   border-radius: 20px;
-}
-#citrix-wrike-box p{
-  /* border: 1px solid red;; */
-  /* line-height: 1px; */
+#citrix-wrike-box {
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+  margin-left: auto;
+  margin-top: 50px;
+  margin-right: auto;
+  /* border: 1px solid red; */
+  height: 250px;
+  width: 350px;
+  background-color: #ebf5f3;
+  border-radius: 20px;
 }
 
-#review h1{
+#review h1 {
   /* border: 1px solid red; */
   padding-left: 20px;
- padding-top: 30px;
+  padding-top: 30px;
 }
-#review p{
+#review p {
   /* border: 1px solid black; */
   padding-left: 20px;
   margin-left: 0px;
 }
-.box-top{
+.box-top {
   /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
 }
-.box-top strong{
+.box-top strong {
   /* border: 1px solid red; */
-  font-size:16px;
+  font-size: 16px;
 }
-.four{
+.four {
   font-size: 30px;
   margin-right: 10px;
 }
@@ -162,17 +157,17 @@ header {
 .checked {
   color: green;
 }
-.submit_a_review{
+.submit_a_review {
   /* border: 1px solid red; */
   /* margin-top: 20px; */
   font-size: 20px;
 }
-.box-top h4{
+.box-top h4 {
   /* border: 1px solid red; */
-  margin-top:20px;
+  margin-top: 20px;
 }
 /* RIGHT BOX **********************/
-#right div{
+#right div {
   /* border: 1px solid blue; */
   width: 80%;
   height: 80px;
@@ -180,20 +175,20 @@ header {
   margin: auto;
   margin: 10px;
 }
-#right-review{
-font-family: Arial;
-margin: 0 auto; /* Center website */
-max-width: 800px; /* Max width */
-/* border:5px solid black; */
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+#right-review {
+  font-family: Arial;
+  margin: 0 auto; /* Center website */
+  max-width: 800px; /* Max width */
+  /* border:5px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .heading {
   /* border:5px solid black; */
   font-size: 25px;
-  margin-left:30px;
+  margin-left: 30px;
 }
-#right-review{
-  border:5px solid black;
+#right-review {
+  border: 5px solid black;
   padding: 20px;
 }
 .fa {
