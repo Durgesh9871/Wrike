@@ -1,0 +1,281 @@
+
+ /* ----------MEDIA QUERIES -  mediam screen ----    */
+
+ /* BACKGROUND  */
+ @media all and (min-width: 1100px) and (max-width: 1245px) {
+    
+    /*  BACKGROUND FITING    */
+    #container_main_home_page {
+        position: relative;
+        top: -70px;
+    }
+
+
+    /*   MAIN HOME HEADING PARA INPUT  */
+    #main_home_heading>h1 {
+        width: 50%;
+        /* border: 2px solid red; */
+        text-align: center;
+        position: absolute;
+        left: 26%;
+        top: 12%;
+    
+        color: #ffffff;
+        font-size: 40px;
+        /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+        font-weight: bold;
+    }
+    
+    #main_home>div>p {
+        width: 40%;
+        /* border: 2px solid red; */
+        text-align: center;
+      
+        color: #ffffff;
+        line-height: 30px;
+        font-size: 20px;
+        position: absolute;
+        left: 31%;
+        top: 27%;
+    }
+
+    #main_home {
+        background-color: #0c3245;
+        background-image: url("https://www.wrike.com/tp/storage/uploads/cffacf70-9be3-47e1-a1ea-a1f93f1a120c/rebrand-hero-illustration-homepage-screenshots-dark-1920x680-2x.png");
+        background-size: 127%;
+        background-position: 47%;
+    
+    
+        /* border: 2px solid red; */
+        height: 520px;
+
+    }
+
+
+
+
+
+    /* ///////--------------------------BUTTON INPUT TAG  */
+
+    #main_home_input {
+        display: flex;
+        position: absolute;
+        left: 30%;
+        margin-top: 30%;
+    
+        /* justify-content: center; */
+    }
+    
+    #main_home_input>div {
+        /* width: 20%; */
+        /* border: 2px solid red; */
+        height: 60px;
+    }
+    
+    #main_home_input>div>input {
+        padding: 20px;
+        font-size: 18px;
+        width: 100%;
+        border-radius: 8px;
+        border: 2px solid black;
+    
+        /* text-align: center; */
+    }
+    
+    #main_home_input>div>button {
+        padding: 20px;
+        font-size: 18px;
+        width: 110%;
+        border-radius: 5px;
+        background-color: #08cf65;
+        border: none;
+        margin-left: 39%;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+}
+
+
+
+
+
+
+   
+
+
+
+ @media all and (min-width: 800px) and (max-width: 1220px) {
+    
+    /* ------Blocking display ----------- */
+#nav_div_1{
+    display: none;
+}
+#nav_div_2{
+    display: none;
+}
+
+/* ----------Menu bar--------- */
+
+    #nav_responsive{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+       
+        
+
+         
+    }
+    #nav_responsive>div{
+        /* border: 2px solid red; */
+        width: 30%;
+        /* height: 50px; */
+         /* padding: 5px; */
+         margin-left: 4%;
+         margin-top: 1%;
+
+    }
+
+    #nav_button_responsive{
+        position: relative;
+        /* right: 10px; */
+    }
+    @keyframes durgesh {
+        from{
+            height: 10px;
+        }
+        to{
+            height: 400px;
+        }
+    }
+    #responsive_menu_button{
+        margin-left: -100px;
+        font-size: 23px;
+         position: absolute;
+        padding: 10px;
+       right: 15px;
+        top: 4px; 
+        display: block;
+        /* transition: 3s linear; */
+     
+    }
+    /* #responsive_menu_cutter{
+        font-size: 25px;
+        position: absolute;
+        padding: 10px;
+        right: 15px;
+        top: 4px;
+        color: white;
+        display: none;
+    } */
+
+    #menu_all_detail{
+        display: none;
+    }
+
+    /* #container_main_home_page{
+        display: none;
+    } */
+
+    #menu_all_detail{
+          background-color: #ffffff;
+          padding: 30px;
+          position: absolute;
+          top: 90%;
+          right: 0;
+          width: 318%;
+          font-size: 20px;
+          /* background: fixed; */
+          /* height: 40%; */
+          animation: durgesh .3s   ;
+      
+          /* margin-left: 40px; */
+          /* overflow: hidden; */
+    }
+    
+    #menu_all_detail>div>i{
+        position: absolute;
+        right: 60px;
+        margin-top: 15px;
+    }
+
+   
+
+    #menu_all_detail>#product_drop{
+       margin-bottom: -20px;
+    }
+    #menu_all_detail>div>a{
+        color: black;
+    }
+    #menu_all_detail>div>a:hover{
+        color: #08cf65;;
+    }
+         
+
+    .rule{
+        color:#d8dde7;
+        margin: 15px 0px;
+    }
+   
+    #price_drop{
+        margin: 30px 0px ;
+    }
+   
+     /* BUTTON OF NAV BAR  */
+
+     #input_responsive{
+       text-align: center;
+       margin-top: 6%;
+     }
+     #input_responsive>button{
+        background-color: #08cf65;
+       
+       
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        font-weight: bold;
+        color: #ffffff;
+     }
+     #input_responsive>input{
+       font-size: 18px;
+       padding: 10px;
+       border: 2px solid #d8dde7;
+       width: 25%;
+
+     }
+
+     #contact_responsive{
+        display: flex;
+        
+     }
+     #contact_responsive>div:hover{
+        color: #08cf65 ;
+     }
+
+     #contact_responsive>div{
+        padding: 10px;
+       /* margin-left: 2%; */
+     }
+    
+     /* --------------MAIN HOME AFTER NAV HEADING PARA INPUT BUTTON  */
+    
+    
+   
+    
+     
+   
+ }
+
+
+
+ /* ----------- SMAILL SCREEN ------small screen--------- */
+
+
+ @media all and (min-width: 300px) and (max-width: 550px) {
+
+
+
+
+ }
