@@ -8,15 +8,15 @@
     height: 100px;
 }
 header {
-    border: 1px solid blue;
-    width: 100%;
-    height: 550px;
-    background-image:url("./two.jpg");
+    /* border: 1px solid blue; */
+    width: auto;
+    height: auto;
+    background-image:url("images/two_people.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
   main {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     height: 50vh;
     display: flex;
@@ -50,7 +50,7 @@ header {
     text-shadow: 1px 1px 1px black;
   }
   
-  section a {
+  .btntwo {
     padding: 12px 30px;
     border-radius: 4px;
     outline: none;
@@ -60,9 +60,15 @@ header {
     text-decoration: none;
     letter-spacing: 1px;
     transition: all 0.5s ease;
+    background: green;
+    color: white;
+    padding: 30px 30px;
+    font-size: 16px;
+    font-weight: bold;
   }
-   section input {
-    
+  #inputBox{
+    background: white;
+    color: #000;
     padding: 30px 100px;
     border-radius: 10px;
     font-size: 16px;
@@ -71,48 +77,35 @@ header {
     letter-spacing: 1px;
     transition: all 0.5s ease;
   } 
-
-  section .btntwo {
-    /* border: 3px solid blue; */
-    background: green;
-    color: white;
-    padding: 30px 30px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .btntwo:hover{
+.btntwo:hover{
     background: green;
     color: #000;
   }
-  #inputBox{
-    background: white;
-    color: #000;
-  }
+ 
   #inputBox:hover{
     background: white;
     color: #000;
   }
 /********************* Gartner ********************/
 #third-container{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
-  gap:130px
+  gap:130px;
 }
 #left,#right{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 600px;
     width: 600px;
-   
 }
 #left img{
   display: flex;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
   margin-top: 100px;
+  /* border: 1px solid red; */
 }
 #citrix-wrike-box{
    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
@@ -121,7 +114,7 @@ header {
    margin-right: auto;
    /* border: 1px solid red; */
     height: 250px;
-    width: 350px;
+    width: 400px;
    background-color: #ebf5f3;
    border-radius: 20px;
 }
@@ -165,42 +158,188 @@ header {
 .submit_a_review{
   /* border: 1px solid red; */
   /* margin-top: 20px; */
-  font-size: 20px;
+   font-size: 20px;
 }
 .box-top h4{
   /* border: 1px solid red; */
   margin-top:20px;
 }
 /* RIGHT BOX **********************/
+
+
+
+
 #right div{
   /* border: 1px solid blue; */
-  width: 80%;
-  height: 80px;
+  width: 70%;
   display: flex;
-  margin: auto;
+  
   margin: 10px;
 }
-#right-review{
-font-family: Arial;
-margin: 0 auto; /* Center website */
-max-width: 800px; /* Max width */
+#right-star{
+max-width: 500px; /* Max width */
+height: 20px;
 /* border:5px solid black; */
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+border-radius: 10px;
+height: 30px;
+padding: 15px;
 }
 .heading {
   /* border:5px solid black; */
+  height: 20px;
   font-size: 25px;
   margin-left:30px;
+  opacity: 40%;
+  font-size: 15px;
 }
-#right-review{
-  border:5px solid black;
-  padding: 20px;
-}
+
 .fa {
   font-size: 25px;
 }
 
 .checked {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   color: orange;
+}
+/* do_best_box *************************/
+
+#do_best_box{
+  /* border: 1px solid red; */
+  width: 100%;
+  height: auto;
+  position: relative;
+  /* border: 2px solid red; */
+  background-color: #04454d;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+#do_best_box div{
+  /* border: 2px solid red */
+}
+
+.container {
+  /* border: 2px solid yellow; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.container h1 {
+  margin: 0;
+  font-size: 60px;
+}
+
+.container h1 span {
+  /* border: 6px solid black; */
+  /* padding: 6px 14px; */
+  /* display: inline-block; */
+}
+
+.cen {
+  margin: 20px;
+  display: block;
+  font-size: 22px;
+}
+
+/*************************** Integrate_box */
+
+
+#Integrate_box{
+  border: 2px solid red;
+  height: auto;
+  display: grid;
+  background-color: #181f38;
+  grid-template-columns: repeat(2,1fr);
+}
+#Integrate_box div{
+   /* border: 1px solid red; */
+}
+#Integrate_box img{
+  /* border: 3px solid red; */
+  height: 500px;
+  width: 100%;
+}
+#Integrate_box div:nth-child(1) {
+  /* border:3px solid black; */
+  margin: auto;
+  padding: 20px;
+}
+#Integrate_box div:nth-child(1) p {
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0 0 20px;
+  color: white;
+}
+#Integrate_box div:nth-child(1) h3 {
+  /* border:3px solid black */
+  padding: 10px;
+  color: green;
+  font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+}
+#Integrate_box div:nth-child(1) h3:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+#Integrate_box div:nth-child(1) h1 {
+  font-feature-settings: "ss01" on,"tnum" on;
+  font-weight: 700;
+  font-size: 24px;
+  /* line-height: 36px; */
+  margin: 0 0 20px;
+  color: white;
+
+}
+
+/*************************** READY TO USE */
+
+#ready_box{
+  border: 2px solid red;
+  height: 1000px;
+  display: grid;
+  background-color: white;
+  grid-template-columns: repeat(2,1fr);
+  padding-left: 60px;
+}
+#ready_box div{
+  border: 1px solid red;
+}
+#ready_box div:nth-child(1) {
+  border:3px solid black;
+  margin: auto;
+  padding: 20px;
+}
+#ready_box div:nth-child(1) p {
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0 0 20px;
+  color: black;
+}
+#ready_box div:nth-child(1) h1 {
+  border: 1px solid pink;
+  font-size: 60px;
+  /* line-height: 32px; */
+  margin: 0 0 20px;
+  color: black;
 }
