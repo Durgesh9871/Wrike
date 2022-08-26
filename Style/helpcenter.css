@@ -6,9 +6,6 @@
     Segoe UI, Roboto, Oxygen-Sans, Fira Sans, Droid Sans, Ubuntu, Cantarell,
     Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
-header {
-  /* border: 2px solid red; */
-}
 #nav {
   height: auto;
   background-color: #04454d;
@@ -36,10 +33,6 @@ header {
   font-weight: 100;
   color: white;
 }
-/* .left_nav img {
-  width: 40%;
-  height: 170%;
-} */
 
 .right_nav {
   /* border: 2px solid teal; */
@@ -84,10 +77,7 @@ header {
   background-color: #08cf65;
   color: #04454d;
 }
-/* #globe {
-  font-size: 20px;
-  cursor: pointer;
-} */
+
 .globe:hover {
   color: #08cf65;
   cursor: pointer;
@@ -140,16 +130,22 @@ section {
   top: 44%;
   left: 24%;
   width: 40%;
-  height: 300px;
+  height: auto;
+  max-height: 300px;
   overflow: auto;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
+  display: none;
 }
+
+.item {
+  padding: 20px;
+}
+/* 
 .searchResult li {
   list-style: none;
   padding-left: 20px;
-  /* display: none; */
 }
 .searchResult li a {
   text-decoration: none;
@@ -158,21 +154,10 @@ section {
   display: block;
   width: 100%;
   text-align: left;
-}
+} */
 .searchResult li:hover {
   background-color: #ebf5f3;
-}
-/* #searchResult {
-  opacity: 0;
-}
-#searchResult:hover {
-  opacity: 1;
-} */
-#searchResult {
-  display: none;
-}
-#search_input:hover #searchResult {
-  display: block;
+  cursor: pointer;
 }
 
 /* ................................................................................ */
@@ -199,12 +184,7 @@ section {
 .cards-gc3 {
   background-color: #ebf5f3;
 }
-/* .cards-gc4 i,
-.cards-gc3 i,
-.cards-ds-gc3 i {
-  font-size: 60px;
-  color: #08cf65;
-} */
+
 .cards-gc4 h2,
 .cards-gc3 h2,
 .cards-ds-gc3 h2 {
