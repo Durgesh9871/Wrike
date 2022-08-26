@@ -20,6 +20,7 @@ div#heading {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-bottom: 35px;
 }
 div#heading > h1 {
   text-align: center;
@@ -59,7 +60,7 @@ div.active_tab {
 div.plans_tab {
   width: 96%;
   /* border: 2px solid red; */
-  margin: 35px auto;
+  margin: auto;
   overflow: hidden;
 }
 div.plan_slider {
@@ -82,7 +83,8 @@ div.plan_cards {
 div.plan_cards > h4 {
   font-size: 28px;
 }
-div.plan_cards > button {
+div.plan_cards > button,
+div#client > button {
   display: block;
   width: 100%;
   height: 50px;
@@ -92,8 +94,10 @@ div.plan_cards > button {
   color: #04454d;
   border: 2px solid #04454d;
   margin-top: auto;
+  cursor: pointer;
 }
-div.plan_cards > button:hover {
+div.plan_cards > button:hover,
+div#client > button:hover {
   background-color: #04454d;
   color: white;
   transition: 300ms;
@@ -113,7 +117,7 @@ div#sliding_btn > button {
   /* border: 2px solid red; */
   /* transform: rotate(90deg); */
   position: absolute;
-  margin-top: -315px;
+  top: 400px;
   background-color: #04454d;
   height: 150px;
   padding: 0 10px;
@@ -191,7 +195,7 @@ div#sliding_btn > button > span {
 div.feature_container {
   display: flex;
   gap: 1.5vw;
-  transition-duration: 0.3s;
+  transition: 300ms ease;
 }
 .plan_features::before {
   content: "\f058";
@@ -200,8 +204,11 @@ div.feature_container {
   color: green;
 }
 div.hide_feature {
-  margin-top: -150px;
-  display: none;
+  margin-top: -50px;
+  height: 1px;
+  overflow: hidden;
+  visibility: hidden;
+  transition: 100ms ease-out;
 }
 
 button.feature_button {
@@ -228,4 +235,130 @@ div.plans_banner {
   padding: 50px;
   background-color: #ebf5f3;
   background-image: url("https://web-static.wrike.com/content/themes/wrike/dist/img/vector/rebranding/price/banner-background-left.svg?v=9a00b45536");
+}
+div.commonTab_box {
+  width: 60%;
+  margin: auto;
+  padding: 35px;
+  border-radius: 7px;
+  border: 2px solid #acafb6;
+}
+div.commonTab_box > h4 {
+  font-size: 28px;
+}
+div.commonTab_box > p:nth-child(2) {
+  font-weight: bold;
+}
+div.commonTab_box > * {
+  margin: 10px auto;
+}
+div.commonTab_box > button {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: transparent;
+  color: #04454d;
+  border: 2px solid #04454d;
+  margin-top: auto;
+  cursor: pointer;
+}
+
+div#tab_section + div {
+  /* border: 1px solid black; */
+  padding: 10px 10%;
+  text-align: center;
+  font-size: 18px;
+}
+
+div.brand_logo {
+  /* border: 1px solid blue; */
+  margin: 35px auto;
+}
+div.brand_logo > div:nth-child(1) {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+}
+div.brand_logo > div:nth-child(2) {
+  text-align: center;
+  color: #657694;
+}
+
+div#add_on_feature {
+  /* border: 1px solid red; */
+  background-color: #ebf5f3;
+}
+.sub__title {
+  text-align: center;
+  padding: 10px 20%;
+}
+h2.header_title {
+  font-size: 40px;
+}
+p.header_subtitle {
+  font-size: 20px;
+  margin: 30px auto;
+}
+
+div#add_on_feature > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  padding: 35px;
+}
+div#add_on_feature > div > div {
+  /* border: 1px solid blue; */
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  transition: 0.4s;
+  padding: 30px 15px;
+}
+div#add_on_feature > div > div:hover,
+img.hover_effect:hover {
+  background-color: #04454d;
+  transition: 0.4s;
+  opacity: 1;
+  color: white;
+}
+
+div#add_on_feature > div > div > div:nth-child(2) > * {
+  margin: 10px auto;
+}
+h5.name_card {
+  font-size: 24px;
+  margin: 20px auto;
+}
+p.card_text {
+  font-size: 18px;
+  line-height: 1.7;
+}
+/* div#add_on_feature > div > div > div:nth-child(1) {
+  border: 1px solid red;
+}
+div#add_on_feature > div > div > div:nth-child(1) > img {
+}
+div#add_on_feature > div > div > div:nth-child(2) {
+  border: 1px solid black;
+} */
+div#add_on_feature,
+div#client {
+  margin: 90px auto;
+}
+img.hover_effect {
+  position: absolute;
+  margin-left: -64px;
+  opacity: 0;
+}
+
+div.client_card_container {
+  display: flex;
+  gap: 25px;
+  padding: 25px 80px;
+}
+div#client > button {
+  width: 250px;
+  margin: auto;
 }
