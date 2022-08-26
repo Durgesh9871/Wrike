@@ -17,7 +17,7 @@
       <div id="nav"></div>
       <div id="current_page">
         <div class="page_desc">
-          <a href="index.html">Wrike Help Center</a>
+          <a href="helpcenter.html">Wrike Help Center</a>
           <span>> Submit a request</span>
         </div>
       </div>
@@ -25,6 +25,7 @@
       <div id="ticket_form">
         <h1>Submit a Ticket</h1>
         <div id="form">
+          <!-- <form id="user_ticket_data"> -->
             <input type="email" id="email" placeholder="Your email address" onkeyup="isEmpty()" />
             <input type="text" id="subject" placeholder="Subject" onkeyup="isEmpty()"/>
             <textarea id="desc" cols="30" rows="10" onkeyup="isEmpty()"></textarea>
@@ -40,6 +41,10 @@
               <option value="Billing">Billing</option>
               <option value="Other Question">Other Question</option>
             </select>
+            <!-- <input
+              type="file"
+              class="upload_file"
+            /> -->
             <button type="button" class="btn-warning">
               <i class="fa fa-paperclip" aria-hidden="true"></i>
                 Add file or drop files here</i
@@ -47,6 +52,7 @@
               <input type="file"/>
             </button>
             <button class="submit_btn" id="submit_btn" disabled>Submit</button>
+          <!-- </form> -->
         </div>
       </div>
     </header>
