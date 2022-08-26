@@ -11,5 +11,16 @@ let isEmpty = () => {
 
   if (email != "" && subject != "" && desc != "" && options != "") {
     document.getElementById("submit_btn").removeAttribute("disabled");
+    document.getElementById("submit_btn").style.backgroundColor = "#017860";
+    document.getElementById("submit_btn").style.color = "white";
+
+    let submit_btn = document.getElementById("submit_btn");
+    submit_btn.addEventListener("click", function () {
+      // email.innerText = "";
+      // subject.innerText = "";
+      // desc.innerText = "";
+      // options.innerText = "";
+      alert("Submitted");
+    });
   }
 };

@@ -5,89 +5,34 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
-    <style>
-        body{
-            background-color: rgb(250,250,250);
-        }
-        #main{
-            width: 80%;
-            margin: auto;
-            margin-top:50px;
-        }
-       #upper span{
-            font-style:var(content);
-            color:rgb(133,200,0);
-        }
-        #upper{
-            text-align: center;
-            margin-bottom: 60px;
-        }
-       #upper h1{
-            font-size:50px;
-            font-style:initial;
-        }
-        #upper p{
-            font-size: x-large;
-        }
-        input,button{
-            padding: 14px 45px;
-            border:2px solid rgb(195, 195, 195);
-        }
-        button{
-            color: white;
-            background-color:rgb(133,200,0) ;
-            border: 0;
-            font-size: large;
-        }
-        input:hover{
-            border:1px solid blue;
-        }
-        a{
-            text-decoration: none;
-            margin-top: 10px;
-            color: black;
-            font-size: large;
-        }
-        a:hover{
-            text-decoration:underline;
-        }
-        #par{
-            display:flex;
-            height:40px;
-            gap:40px;
-            margin-left: 135px;
-        }
-        #middle{
-            display: flex;
-            gap: 30px;
-        }
-        #first{
-            background-color: white;
-            border: 1px solid rgb(195, 195, 195);
-        }
-        #first img{
-            width:738px;
-        }
-        #first a,#first h1,#first p{
-            margin-left: 20px; 
-        }
-        #first>h1:hover{
-            color: blue;
-        }
-    #first a{
-        color: blue;
-    }
-    #first span{
-        color: grey;
-    }
-    </style>
+    <link rel='stylesheet' type='text/css' media='screen' href='./Style/wrikeBlog.css'>
     
 </head>
+
 <body>
-    <div id="main">
-
-
+<hr>
+<div id="up">
+    <p> Company</p>
+    <p>Careers</p>
+    <p>English</p>
+</div>  
+<hr>
+<div class="main">
+    <div id="nav" >
+        <div id="navup" class="flex">
+            <img src="https://stensul.com/wp-content/uploads/2021/07/wrike-citrix-logo_color_black_RGB.png" alt="">
+            <p>Product</p>
+            <p>Solutions</p>
+            <p>Pricing</p>
+            <p>Resources</p>
+        </div>
+        <div id="navlow">
+            <button>Get started for free</button>
+            <button>Log in</button>
+        </div>
+    </div>
+</div>
+    <div class="main">
     <div id="upper">
         <h1>Blog for <span>Brilliant</span> Teams</h1>
         <p>Empower your team with the best collaboration software — </p>
@@ -108,7 +53,7 @@
         
         </div>
         <hr>
-<div id="main">
+<div class="main">
     <div id="middle">
         <div id="first">
             <img src="https://web-static.wrike.com/cdn-cgi/image/width=695,height=397,fit=crop,format=auto,q=80/blog/content/uploads/2022/08/iStock-1156715165-e1661263014955.jpg?av=622388375780f9281dbe68708dc4d73e" alt="">
@@ -116,14 +61,14 @@
             <h1>How to Plan an Event: Best Practice Guide</h1>
             <p>Balancing working and parenting can be difficult. Here’s how three Wrike parents leverage flexible schedules and Wrike work management to...            </p>
         </div>
-        <div>
-            <div>
+        <div id="midright">
+            <div class="center" id="sub">
                 <p>Get weekly updates in your inbox</p>
-                <input type="email" placeholder="Enter your email" id="">
-                <button>Subscribe</button>
+                <input type="email" placeholder="Enter your email" id="email">
+                <button onclick="emailfun()">Subscribe</button>
             </div>
-            <div>
-                <p>MOST POPULAR</p>
+            <div id="sub2">
+                <p class="center">MOST POPULAR</p>
                 <div>
                     <img src="https://web-static.wrike.com/cdn-cgi/image/width=70,height=70,fit=crop,format=auto,q=80/blog/content/uploads/2017/06/blogpost_image_program-manager-vs-project-manager.jpg?av=b2973e52badbf61b6c5cf5ae81abd1a8" alt="">
                     <p>What Is a Program Manager vs. a Project Manager?</p>
@@ -141,7 +86,20 @@
             </div>
         </div>
     </div>
-    </div>    
+
+    <div id="lower"></div>
+    <button class="btn">Load more</button>
+
+
+</div>
+<hr>
+    <div id="fotter">
+        <p>Leading сompanies сhoose Wrike</p>
+        <img src="data:image/png;base64,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" alt="">
+        <img src="https://1000logos.net/wp-content/uploads/2021/11/Siemens-logo.png" alt="">
+        
+        
+    </div>   
 </body>
 </html>
 <script src='./script/wrikeBlog.js'></script>

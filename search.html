@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Style/helpcenter.css" />
+    <link rel="stylesheet" href="Style/search.css" />
+  </head>
+  <body>
+    <header>
+      <div id="nav"></div>
+    </header>
+
+    <section>
+      <div class="search_section">
+        <h1>What can we help you with ?</h1>
+        <div id="search_input">
+          <input
+            type="text"
+            id="query"
+            placeholder="e.g. Gantt chart, creating projects..."
+            onkeyup="search()"
+          />
+
+          <button onclick="searchFun()" class="search_btn" id="search">
+            Search
+          </button>
+          <ul class="searchResult" id="searchResult"></ul>
+        </div>
+      </div>
+    </section>
+    <main>
+      <div id="search_results_container">
+        <div id="search_results_flex">
+          <div id="search_results_filter">
+            <ul class="search_results_filter_list-item">
+              <li id="allCategory">All Types</li>
+              <li id="category">Categories</li>
+              <li id="articles">Articles</li>
+            </ul>
+          </div>
+          <div id="search_results_section">
+            <div id="search_results_section_center">
+              <h1 id="total_search_results"></h1>
+              <ul class="search_results_list"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer"></div>
+    </footer>
+  </body>
+</html>
+<script type="module">
+  import navbar from "/components/header.js";
+  let nav_container = document.getElementById("nav");
+  nav_container.innerHTML = navbar();
+
+  import { footer } from "/components/footer.js";
+  let footer_container = document.getElementById("footer");
+  footer_container.innerHTML = footer();
+</script>
+<script src="script/search.js"></script>
