@@ -103,3 +103,7 @@ let emailfun=()=>{
     }
     document.querySelector("#sub").innerText="Check your inbox, the first tips are already delivered. Have a great day! Your Wrike team"
 }
+let loginfun=()=>{
+    window.location.href="#"
+}
+loginfun()
