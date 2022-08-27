@@ -554,3 +554,98 @@ function clientSection() {
     .querySelector("#client")
     .append(heading, subtitle, boxContainer, button);
 }
+
+//faq section
+faq();
+function faq() {
+  let faq_data = [
+    {
+      title: "1. What are the different types of licenses?",
+      text: "Wrike has a variety of different options available to suit your team, including three types of user licenses – regular users, external users, and collaborators. For regular and external users, there is a charge per user. You’ll get 20 collaborator invites or 15% of your license count (whichever is greater) with no additional charge included with your subscription. If this is not enough, please speak with your Wrike representative to discuss other options.<br><br> Within these, there are full and guest licenses. A full license (regular users and external users) gives you access to every feature within your plan but external users are limited to certain access rights. However, a guest license (collaborators) only gives you some basic functions.",
+    },
+    {
+      title: "2. What happens when my trial has expired? ",
+      text: "Your account will be blocked until you choose what you’d like to do with it. From here, you can either downgrade it to the free version or reach out to your Wrike representative. They will be able to discuss the next steps for choosing a plan and whether a trial extension is possible.",
+    },
+    {
+      title: "3. How do I purchase a subscription?",
+      text: "If you are a first-time user, just enter your business email at the top of the page to get your 14-day free trial. You can give us a call to get set up or wait for one of our representatives to get in touch to find the right solution for your team.  If you already have a trial, you can purchase online for up to 15 users for Professional and Business plans with no add-ons in the Account section of your workspace. For a larger number of users, you’ll need to contact your Wrike representative.  Wrike is sold in groups of users. For accounts of up to 30 seats, subscription is sold in groups of 5. For accounts of 30 to 100 seats, subscription is sold in groups of 10. For accounts above 100 seats, subscription is sold in groups of 25. Wrike Business and above is only available as an annual subscription.",
+    },
+    {
+      title: "4. Can I pay in my local currency and what kind of taxes apply?",
+      text: "All our prices are listed in US dollars, but your bank will be able to convert this to your local currency upon purchase. You will also receive your invoice in US dollars. In regards to tax implications, all of our prices do not include applicable state/local taxes and you (the client) will be responsible for them. If you have any questions, please speak to your sales representative and we’ll be happy to help.",
+    },
+    {
+      title: "5. Where will my data be hosted?",
+      text: "Your data will be automatically stored in our two data centers in San Jose, California. You may also request your data to be stored in our European data center in Amsterdam, the Netherlands. To request this, just contact your Wrike representative or our support team.",
+    },
+    {
+      title:
+        "6. Does Wrike have an on-premise solution or is it just cloud-based?",
+      text: "Wrike is entirely cloud-based, meaning there is no need for site visits and our software can be used instantly by remote workers.",
+    },
+    {
+      title: "7. What does Wrike do to ensure GDPR compliance?",
+      text: "Wrike has a variety of different options available to suit your team, including three types of user licenses – regular users, external users, and collaborators. For regular and external users, there is a charge per user. You’ll get 20 collaborator invites or 15% of your license count (whichever is greater) with no additional charge included with your subscription. If this is not enough, please speak with your Wrike representative to discuss other options.Within these, there are full and guest licenses. A full license (regular users and external users) gives you access to every feature within your plan but external users are limited to certain access rights. However, a guest license (collaborators) only gives you some basic functions.",
+    },
+    {
+      title:
+        "8. What are the differences between Wrike Professional, Wrike for Professional Services, and a Professional Services deployment add-on?",
+      text: "Wrike has a variety of different options available to suit your team, including three types of user licenses – regular users, external users, and collaborators. For regular and external users, there is a charge per user. You’ll get 20 collaborator invites or 15% of your license count (whichever is greater) with no additional charge included with your subscription. If this is not enough, please speak with your Wrike representative to discuss other options. Within these, there are full and guest licenses. A full license (regular users and external users) gives you access to every feature within your plan but external users are limited to certain access rights. However, a guest license (collaborators) only gives you some basic functions.",
+    },
+    {
+      title:
+        "9. From what team size do you recommend adding a Professional Services deployment to my solution?",
+      text: "Wrike has a variety of different options available to suit your team, including three types of user licenses – regular users, external users, and collaborators. For regular and external users, there is a charge per user. You’ll get 20 collaborator invites or 15% of your license count (whichever is greater) with no additional charge included with your subscription. If this is not enough, please speak with your Wrike representative to discuss other options.Within these, there are full and guest licenses. A full license (regular users and external users) gives you access to every feature within your plan but external users are limited to certain access rights. However, a guest license (collaborators) only gives you some basic functions.",
+    },
+  ];
+
+  let faq_container = document.getElementById("faq");
+  let heading = document.createElement("h2");
+  heading.innerText = "FAQ";
+  heading.classList.add("header_title", "sub__title");
+
+  faq_container.append(heading);
+
+  faq_data.forEach((el) => {
+    let boxes = document.createElement("div");
+    let button = document.createElement("button");
+    let arrow = document.createElement("span");
+    let text = document.createElement("p");
+
+    text.classList.add("collapse_text");
+    boxes.classList.add("collapse_text");
+    button.classList.add("collapse_text");
+
+    boxes.addEventListener("click", () => {
+      faqCollapse(arrow, text, boxes, button);
+    });
+    boxes.classList.add("faq_boxes");
+    button.innerText = el.title;
+    text.innerText = el.text;
+    arrow.setAttribute("class", "fa-solid fa-caret-up");
+    button.append(arrow);
+    boxes.append(button, text);
+    faq_container.append(boxes);
+  });
+}
+
+//faq collapse function
+
+let statusCollapse = false;
+function faqCollapse(arrow, text, boxes, button) {
+  console.log(text.classList);
+  if (statusCollapse) {
+    arrow.style.transform = "rotate(0deg)";
+    text.classList.add("collapse_text");
+    statusCollapse = false;
+    boxes.classList.add("collapse_text");
+    button.classList.add("collapse_text");
+  } else {
+    arrow.style.transform = "rotate(180deg)";
+    statusCollapse = true;
+    text.classList.remove("collapse_text");
+    boxes.classList.remove("collapse_text");
+    button.classList.remove("collapse_text");
+  }
+}
