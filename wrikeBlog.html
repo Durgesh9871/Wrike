@@ -12,27 +12,130 @@
 <body>
 <hr>
 <div id="up">
-    <p> Company</p>
-    <p>Careers</p>
-    <p>English</p>
+    <div class="menu-bar">
+                
+        <ul>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">English</a>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="#">Deutsch</a></li>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Español</a></li>
+                    <li><a href="#">Français</a></li>
+                    <li><a href="#">Italiano</a></li>
+                    <li><a href="#">Português (BR)</a></li>
+                    <li><a href="#">Русский</a></li>
+                    <li><a href="#">日本語</a></li>
+                    <li><a href="#">中文(简体)</a></li>
+                  </ul>
+                </div>
+            </li>
+
+        </ul>
+      </div>
 </div> 
 <div id="body">
-
-
 <hr>
 
 <div class="main">
     <div id="nav" >
         <div id="navup" class="flex">
             <img src="https://stensul.com/wp-content/uploads/2021/07/wrike-citrix-logo_color_black_RGB.png" alt="">
-            <p>Product</p>
-            <p>Solutions</p>
-            <p>Pricing</p>
-            <p>Resources</p>
+            <div class="menu-bar">
+                
+                <ul>
+                    <li><a href="#">Product <i class="fas fa-caret-right"></i></a>
+                        <div class="dropdown-menu">
+                          <ul>
+                            <li><a href="#">Take a Tour</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Project Templates </a></li>
+                            <li><a href="#">Apps & Integers</a></li>
+                            <li><a href="#">Security</a></li>
+                            <li><a href="#">Watch Live Demo</a></li>
+                          </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Solutions</a>
+                        <div id="raj" class="dropdown-menu">
+                            <ul>
+                                <ul>
+                                    <p>TEAMS</p> 
+                                    <li><a href="#">Project Managers </a></li>
+                                    <li><a href="#">Marketing </a></li>
+                                    <li><a href="#">Creative </a></li>
+                                    <li><a href="#">Professional Services </a></li>
+                                    <li><a href="#">Product Development </a> </li>
+                                    <li><a href="#">Business Operations </a></li>
+                                    <li><a class="blue" href="#">All Teams → </a></li>
+                                </ul>
+                                <ul>
+                                    <p>USE CASES</p>
+                                    <li><a href="#">Enterprise Project Management </a></li>
+                                    <li><a href="#">Agency Project Management</a></li>
+                                    <li><a href="#">Agile Project Management </a></li>
+                                    <li><a href="#">Project Portfolio Management </a></li>
+                                    <li><a href="#">Resource Management </a></li>
+                                    <li><a href="#">Working From Anywhere </a></li>
+                                    <li><a href="#" class="blue">All use cases →</a></li>
+                                </ul>
+                                
+                            </ul>
+                        
+                            
+                            
+                        </div>       
+                    </li>
+                  <li><a href="#">Pricing <i class="fas fa-caret-down"></i></a>
+          
+                      
+                    </li>
+                    <li><a href="#">Resources</a>
+                        <div id="raj" class="dropdown-menu">
+                            <ul>
+                                <ul>
+                                    <p>LEARN MORE</p> 
+                                    <li><a href="#">Resources</a></li>
+                                    <li><a href="#">Wrike blog</a></li>
+                                    <li><a href="#">Webinars</a></li>
+                                    <li><a href="#">Customer stories</a></li>
+                                    <li><a href="#">Educational Guides</a> </li>
+                                    
+                                </ul>
+                                <ul>
+                                    <p>ABOUT</p>
+                                    <li><a href="#">Partners</a></li>
+                                    <li><a href="#">Company</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Newsroom</a></li>
+                                    <li><a href="#">Events</a></li>
+
+                                </ul>
+                                <ul>
+                                    <p>SUPPORT</p>
+                                    <li><a href="#">Professional Services</a></li>
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Community</a></li>
+                                    <li><a href="#">Interactive Training</a></li>
+                                    <li><a href="#">Support Packages</a></li>
+                                    
+                                </ul>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+              </div>
+          
+              <div class="hero">
+                &nbsp;
+              </div>
         </div>
         <div id="navlow">
             <button>Get started for free</button>
-            <button>Log in</button>
+            <button onclick="loginfun()">Log in</button>
         </div>
     </div>
 </div>
@@ -47,13 +150,26 @@
     </div>
 </div>
 
-
         <hr>
         <div id="par">
-            <a href="">Remote Working</a>
-            <a href="">Wrike Tips</a>
-            <a href="">Project Management</a>
-            <a>More</a>
+            <div class="menu-bar">
+                <ul>
+                    <p><a href="#">Remote Working</a></p>
+                    <p><a href="#">Wrike Tips</a></p>
+                    <p><a href="#">Project Management</a></p>
+                    <li><a href="#">More</a>
+                        <div class="dropdown-menu">
+                          <ul>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Collaboration</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Productivity</a></li> 
+                          </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         
         </div>
         <hr>
