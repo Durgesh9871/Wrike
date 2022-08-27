@@ -23,7 +23,9 @@
 }
 
 
-
+#nav_div_1>div>a{
+    color: #ffffff;
+}
 
 #nav_div_1 {
 

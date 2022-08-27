@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/price.css" />
+    <link rel="stylesheet" href="./Style/price.css" />
+    <link rel="stylesheet" href="./Style/home_1.css">
+    <link rel="stylesheet" href="./Style/home_footer.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -15,7 +17,10 @@
     <title>Plans and Pricing | Wrike</title>
   </head>
   <body>
-    <div id="datta">sdlfksfj</div>
+
+    <div id="nav_main">
+    </div>
+       
     <div id="heading">
       <h1>Plans for Every Team</h1>
       <div id="tabs">
@@ -54,21 +59,39 @@
     <!-- FAQ section -->
     <div id="faq"></div>
     <!-- help section -->
-    <div id="help_section">
+    <!-- <div id="help_section">
       <h2>We're ready to help!</h2>
       <p>
         At Wrike, we are passionate about our customer’s success. Our team of
         experts are here to help!
       </p>
       <button>Contact us</button>
-    </div>
+    </div> -->
     <!-- Popup email section -->
     <div class="popup_email" id="popup_email"></div>
+
+
+      <!-- HOME PAGE FOOTER ------------>
+      <div id="home_page_footer">
+      </div>
+
   </body>
 </html>
 <script type="module">
-  import navbar from "./components/header.js";
-  let nav_container = document.getElementById("datta");
-  nav_container.innerHTML = navbar();
+
+  // import navbar from "./components/header.js";
+  // let nav_container = document.getElementById("datta");
+  // nav_container.innerHTML = navbar();
+
+// NAV 
+  import home_nav_copy_import from './components/import_home_nav.js'
+   let nav_main = document.getElementById("nav_main")
+   nav_main.innerHTML = home_nav_copy_import()
+   
+  //  FOOTER 
+    import import_home_footer from './components/import_home_footer.js'
+   let footer_main = document.getElementById("home_page_footer")
+   footer_main.innerHTML = import_home_footer()
+
 </script>
 <script src="script/price.js"></script>
