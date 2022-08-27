@@ -16,10 +16,12 @@
 </head>
 
 <body>
+    
     <div id="nav_main">
+    </div>
        
 
-    </div>
+
 
 
     </div>
@@ -121,9 +123,9 @@
                     
 
      
-    <!--  HOME PAGE FOOTER ------------>
-      <!-- <div id="home_page_footer">
-    </div> -->
+     <!-- HOME PAGE FOOTER ------------>
+      <div id="home_page_footer">
+    </div>
 
     
 
@@ -139,11 +141,11 @@
 </html>
 <script src="./Script/home_nav.js"></script>
 <script type="module">
-   import home_nav_copy_import from './Script/import_home_nav.js'
+   import home_nav_copy_import from './components/import_home_nav.js'
    let nav_main = document.getElementById("nav_main")
    nav_main.innerHTML = home_nav_copy_import()
      
-   import import_home_footer from './Script/import_home_footer.js'
+   import import_home_footer from './components/import_home_footer.js'
    let footer_main = document.getElementById("home_page_footer")
    footer_main.innerHTML = import_home_footer()
 
