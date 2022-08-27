@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+}
+
+#box {
+  /* border: 2px solid red; */
+  height: auto;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.logo {
+  height: auto;
+  /* border: 2px SOLID BLACK; */
+}
+.logo > img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+.login_content {
+  width: 80%;
+  margin: auto;
+  /* border: 2px solid blue; */
+}
+input {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 4px;
+  outline-color: #4488ff;
+}
+#login_btn {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 15px;
+  background-color: #4488ff;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+.forget_password {
+  text-align: center;
+  color: #4488ff;
+  margin-top: 25px;
+  cursor: pointer;
+}
+.forget_password:hover {
+  color: #7297e6;
+}
+
+.login_with {
+  margin-top: 40px;
+  text-align: center;
+  color: #bbc2cc;
+}
+.login_accounts {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+.accounts {
+  width: auto;
+  border: 1px solid rgb(83, 80, 80);
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  /* margin-bottom: 20px; */
+}
+.accounts:hover {
+  border-color: #4488ff;
+}
+.accounts span {
+  /* display: inline; */
+  /* color: #d2dcea; */
+}
+#signup_link {
+  text-align: center;
+  padding-bottom: 40px;
+}
+#signup_link > span {
+  color: #5e678f;
+  font-size: 14px;
+}
+#signup_link > a {
+  text-decoration: none;
+  color: #4488ff;
+  font-size: 13px;
+}
+#signup_link > a:hover {
+  color: #7297e6;
+}
