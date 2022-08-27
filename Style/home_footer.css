@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "TT_Norms_Pro", -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, "Fira Sans", "Droid Sans",
+    Ubuntu, Cantarell, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+   
+}
+#home_footer_1{
+    background-color: #0c3245;
+    /* height: 200vh; */
+}
+
+#home_footer_step_1{
+  
+   
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   overflow: hidden;
+
+  
+}
+#home_footer_step_1>div{
+   /* border: 2px solid white; */
+   width: 30%;
+   /* height: 60%; */
+
+}
+#home_footer_step_1>div>img{
+    width: 100%;
+
+}
+#footer_left_real{
+   margin-left: -90px;
+
+}
+#footer_right_real{
+    margin-left: 27%;
+   
+}
+
+#home_footer_step_1>div:nth-child(2){
+    width: 40%;
+}
+#footer_content_middle>h1{
+    color:#ffffff ;
+    text-align: center;
+    margin-top: 90px;
+    font-size: 44px;
+}
+#footer_content_middle>p{
+    color:#ffffff ;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: -20px;
+    font-size: 20px;
+}
+#footer_input_submit{
+    margin: 60px 0px;
+    text-align: center;
+}
+#footer_input_submit>input{
+    font-size: 20px;
+    color:#917c9c ;
+    padding: 16px;
+    border-radius: 6px;
+    width: 38%;
+}
+#footer_input_submit>button{
+    background-color: #08cf65;
+    font-size: 20px;
+    padding: 16px;
+    color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 28%;
+      margin-left: 8px;
+}
+#footer_input_submit>button:hover{
+    background-color: #11be62dc;
+    
+}
+#all_footer_divs{
+     display: flex;
+     justify-content: space-between;
+     /* border: 2px solid white; */
+     width: 80%;
+     margin: auto;
+}
+#all_footer_divs>div{
+     /* border: 2px solid white; */
+    width: 25%;
+    /* height: 100px; */
+    
+}
+#all_footer_divs>div:nth-child(5){
+      width: 50%;
+}
+#all_footer_divs>div>h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+
+}
+#all_footer_divs>div>p{
+    color :#c1c9D8;
+   line-height: 30px;
+     cursor: pointer;
+  
+}
+#margin_bottom{
+    margin-top:15px ;
+   
+}
+#all_footer_divs>div>p:hover{
+     color: rgb(8, 245, 245);
+     text-decoration: underline;
+}
+#last_div_footer{
+    border-top: 2px solid #063f4b; ;
+    width: 80%;
+    height: 90px;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+#last_div_footer>div{
+     /* border: 2px solid white; */
+     width: 35%;
+
+}
+#footer_logo_apple>img{
+    width: 30%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#footer_logo_apple{
+    display: flex;
+   
+    /* justify-content: space-around; */
+}
+#footer_logo_social_media{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin-left: 20px;
+}
+#footer_logo_social_media>div{
+    width: 20%;
+}
+
+#footer_logo_social_media>div>img{
+    width: 30%;
+    margin-left: 15px;
+    cursor: pointer;
+}
+#footer_logo_social_media>div>img:hover{
+    width: 60%;
+}
+
+#footer_last_lecture{
+    line-height: 30px;
+    margin-top: 13px;
+}
+#footer_last_lecture>p:nth-child(1){
+     color:#c0c9d1 ;
+     cursor: pointer;
+    
+}
+
+#footer_last_lecture>p:nth-child(2){
+    color:  #ffffff;
+    cursor: pointer;
+    margin-left: 35px;
+    text-decoration: underline;
+}
+#footer_last_lecture>p:nth-child(2):hover{
+    color:  #c0c9d1;
+}
