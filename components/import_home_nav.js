@@ -32,7 +32,7 @@ let home_nav_copy_import = ()=>{
     <!-- <div id="product_drop"> -->
     <div id="product_drop">Product <i class="fas fa-caret-down" style="margin-left:8px ;"></i>
         <div class="dropdown_menu_Product">
-            <div><a href="#">Take a tour</a> </div>
+            <div><a href="tour.html">Take a tour</a> </div>
             <div><a href="#">Features</a></div>
             <div><a href="#">Project Templates</a></div>
             <div><a href="#">Apps & Integration</a></div>
@@ -63,7 +63,7 @@ let home_nav_copy_import = ()=>{
         </div>
     </div>
 
-    <div>Pricing</div>
+    <div><a href="price.html">Pricing</a></div>
 
     <!-- div---4 -->
     <div id="resource_drop">Resource <i class="fas fa-caret-down" style="margin-left:8px ;"></i>
@@ -71,7 +71,7 @@ let home_nav_copy_import = ()=>{
             <div class="dropdown_menu_resource_1">
                 <h3>LEARN MORE</h3>
                 <div><a href="#">Resources</a></div>
-                <div><a href="#">Wrike blog</a></div>
+                <div><a href="wrikeBlog.html">Wrike blog</a></div>
                 <div><a href="#">Webinars</a></div>
                 <div><a href="#">Customer stories</a></div>
             </div>
@@ -87,7 +87,7 @@ let home_nav_copy_import = ()=>{
             <div class="dropdown_menu_resource_3">
                 <h3>SUPPORT</h3>
                 <div><a href="#">Professional Services</a></div>
-                <div><a href="#">Help Center</a></div>
+                <div><a href="helpcenter.html">Help Center</a></div>
                 <div><a href="#">Community</a></div>
                 <div><a href="#">Support Packages</a></div>
             </div>
