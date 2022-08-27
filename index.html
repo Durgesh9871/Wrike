@@ -8,6 +8,7 @@
     <title>Versatile & Robust Project Management</title>
     <link rel="stylesheet" href="./Style/home_1.css">
     <link rel="stylesheet" href="./Style/home_media.css">
+    <link rel="stylesheet" href="./Style/home_footer.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
@@ -15,29 +16,13 @@
 </head>
 
 <body>
-
-
-
-                    <div id="contact_responsive">
-                        <div>Contact Sales</div>
-                        <div>Log In</div>
-                    </div>
-
-
-
-                    <!-- </div> -->
-
-
-                </div>
-            </div>
-
-
-        </div>
+    <div id="nav_main">
+       
 
     </div>
 
 
-    <!-- </div> -->
+    </div>
 
     <!-- -------------------------------AFTER NAV BACKGROUND IMAGE----------------- -->
     <div id="container_main_home_page">
@@ -57,6 +42,7 @@
                 </div>
             </div>
         </div>
+
 
         <!-- AFTER BACKGROUND IMAGE  -->
         <div id="extended_main_home">
@@ -87,8 +73,10 @@
             <div id="extended_paraImages">
                 <div id="extended_para">
                     <p>COLLABORATE 2022 IS COMING!</p>
-                    <br>
                     <h1>Register now for the ultimate work management event</h1>
+                   <p>Learn how companies are increasing productivity and finding the freedom to focus on their most meaningful work. Enjoy hands-on product sessions and customer-led stories that show how teams are rising above hidden complexities to do their most purposeful work.</p>
+                  <h3 id="extended_heading_register">Register now -></h3>
+                  
 
                 </div>
                 <div id="extended_images">
@@ -96,20 +84,69 @@
                         alt="">
                         
                 </div>
-                    
+          </div>
+        </div>
+    </div>
 
+    <!-- ----------STORY FROM OUR CUSTOMERS --------- -->
+
+    <div id="main_story">
+        <h1>Stories from our customers</h1>
+
+        <div id="main_story_main_div">
+            <div id="main_story_images">
+                <img id="main_story_cus_img" src="https://web-static.wrike.com/tp/storage/uploads/7dd214f0-63f6-471c-a0bf-d91af66ee81c/rebrand-quote-slider-image-syneos-health-2x.jpg" alt="">
             </div>
-
-
-
-
+            <div id="main_story_customer_review">
+                <p id="main_story_cus">"The moment our teams saw Wrike, we heard a resounding 'yes' – it was the one system that met each and every one of our team’s comprehensive and complex requirements."</p>
+                <p id="main_story_cus_name">
+                    Sherrie Besecker, Creative Technology Manager at Syneos Health
+                </p>
+                <img id="company_name_img" src="https://web-static.wrike.com/tp/storage/uploads/f57e5493-aa0e-41c3-8130-f9ff3eb6059c/rebrand-quote-logo-syneos-health-white.svg" alt="">
+                <h3>Watch Syneos Health's Story -></h3>
+            </div>
+           
         </div>
 
+       <div id="main_story_button">
+        <button id="1"></button>
+        <button id="2"></button>
+        <button id="3"></button>
+        <button id="4"></button>
+        <button id="5"></button>
+       </div>
 
+      
     </div>
+                    
+
+     
+    <!--  HOME PAGE FOOTER ------------>
+      <div id="home_page_footer">
+    </div>
+
+    
+
+
+
+
+
+
 
 
 </body>
 
 </html>
 <script src="./Script/home_nav.js"></script>
+<script type="module">
+   import home_nav_copy_import from './components/import_home_nav.js'
+   let nav_main = document.getElementById("nav_main")
+   nav_main.innerHTML = home_nav_copy_import()
+     
+   import import_home_footer from './components/import_home_footer.js'
+   let footer_main = document.getElementById("home_page_footer")
+   footer_main.innerHTML = import_home_footer()
+
+
+
+</script>
