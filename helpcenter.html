@@ -37,7 +37,7 @@
           <input
             onblur="hideList()"
             onfocus="showList()"
-            onkeyup="search()"
+            onkeyup="debounce(search,1000)"
             type="text"
             id="query"
             placeholder="e.g. Gantt chart, creating projects..."

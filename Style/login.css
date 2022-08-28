@@ -48,6 +48,9 @@ input {
   margin-top: 15px;
   border-radius: 4px;
 }
+#login_btn:hover{
+  background-color: #6c9ef4;
+}
 .forget_password {
   text-align: center;
   color: #4488ff;

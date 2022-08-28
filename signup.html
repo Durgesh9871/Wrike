@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="Style/signup.css" />
+    <link rel="stylesheet" href="Style/home_1.css" />
   </head>
   <body>
     <nav>
-      <div id="nav"></div>
+      <div id="nav_main"></div>
     </nav>
     <section>
       <div id="content_div">
@@ -79,4 +80,10 @@
     </main>
   </body>
 </html>
+<!-- <link rel="stylesheet" href="components/import_home_footer.js" /> -->
 <script src="script/signup.js"></script>
+<script type="module">
+  import home_nav_copy_import from "/components/import_home_nav.js";
+  let nav_container = document.getElementById("nav_main");
+  nav_container.innerHTML = home_nav_copy_import();
+</script>

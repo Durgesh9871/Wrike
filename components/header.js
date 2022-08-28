@@ -32,9 +32,9 @@ function navbar() {
        <option value="English">Italiano</option>
     </select>
       <button class="nav_btn" id="submit">  <a href="ticket_form.html">Submit a Request</a></button>
-      <button class="nav_btn"><svg class="sign-in__logo" width="20" height="13" viewBox="0 0 200 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <button class="nav_btn" ><svg class="sign-in__logo" width="20" height="13" viewBox="0 0 200 127" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M46.91 46.081c9.683 0 14.246 1.781 21.258 8.794l37.62 37.621c1.113 1.114 1.335 1.559 1.558 2.227.111.222.111.556.111.779 0 .222 0 .556-.111.779-.223.668-.445 1.113-1.558 2.226l-25.71 25.823c-1.114 1.113-1.56 1.336-2.227 1.559-.222.111-.556.111-.779.111-.223 0-.557 0-.78-.111-.667-.223-1.112-.446-2.225-1.559L1.165 51.424C-.95 49.309-.171 46.081 3.39 46.081h43.518zM153.091.111c-9.684 0-14.247 1.781-21.259 8.794l-37.62 37.621c-1.113 1.114-1.335 1.559-1.558 2.227-.111.222-.111.556-.111.779 0 .222 0 .556.111.779.223.668.445 1.113 1.558 2.226l25.711 25.712c1.113 1.113 1.558 1.336 2.226 1.558.223.112.556.112.779.112.223 0 .557 0 .779-.112.668-.222 1.113-.445 2.226-1.558l72.902-72.906C200.95 3.228 200.171 0 196.609 0h-43.518v.111z" fill="currentColor"></path>
-    </svg> Sign in with Wrike</button>
+    </svg> <a href="login.html">Sign in with Wrike</a></button>
     </div>
   </div>`;
 }
