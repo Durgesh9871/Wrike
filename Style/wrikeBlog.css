@@ -1,10 +1,13 @@
+body{
+  background-color: rgb(246, 246, 246);  
+}
 #body{
-    background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
     border: 1px solid rgb(255,255,255);
-    width: 100%;
+    width:100%;
     position:sticky;
     top:0px;
-    display: block;
+  
 }
 
 .main{
@@ -123,7 +126,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 justify-content: space-around;
-width: 90%;
+width:100%;
 }
 #sub button{
 padding: 10px 91.5px;
@@ -175,7 +178,7 @@ background-color:rgb(32,153,253);
 color: black;
 border: 1px solid;
 background-color:white;
-margin-left:20px;
+margin-left:50px;
 
 }
 #nav img{
@@ -195,17 +198,20 @@ margin-left:80px;
 }
 #navlow button{
     height:50px;
+    /* margin-left:-40px; */
     margin-right:-10%;
 }
 #up{
 background-color: white;
 height:25px;
 display: flex;
-justify-content: end;
+justify-content:flex-end;
 align-items: center;
-margin-left:65%;
+/* margin-left:65%; */
 }
-
+#up div{
+  margin-left:62%;
+}
 #lower div{
     width:330px;
     height:520px;
