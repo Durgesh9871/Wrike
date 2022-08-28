@@ -1,6 +1,6 @@
 let searchResult = document.getElementById("searchResult");
 let searchInput = document.getElementById("query");
-
+let id;
 async function search() {
   const value = searchInput.value;
   console.log({ value });
@@ -15,6 +15,15 @@ async function search() {
   } catch (error) {
     console.log({ error });
   }
+}
+
+function debounce(func, delay) {
+  if (id) {
+    clearTimeout(id);
+  }
+  id = setTimeout(function () {
+    func();
+  }, delay);
 }
 
 function showList() {
