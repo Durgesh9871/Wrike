@@ -114,18 +114,26 @@ function plansTab() {
     if (el.popular) {
       let popular = document.createElement("div");
       popular.innerText = "MOST POPULAR";
+      popular.style.fontSize = "12px";
+      popular.style.color = "grey";
+      popular.style.fontWeight = "bold";
       div_plans.append(popular);
     }
 
     div_plans.append(title, subtitle, description);
 
     if (el.price) {
+      let price_duration = document.createElement("div");
       let price = document.createElement("span");
       let duration = document.createElement("span");
       price.innerText = `$${el.price}`;
       duration.innerText = `user/
       month`;
-      div_plans.append(price, duration);
+      price.classList.add("price_dollar");
+      price_duration.append(price, duration);
+      price_duration.style.display = "flex";
+      price_duration.style.gap = "10px";
+      div_plans.append(price_duration);
     }
 
     if (el.contact) {
@@ -632,18 +640,18 @@ function faq() {
 
 //faq collapse function
 
-let statusCollapse = false;
+// let statusCollapse = false;
 function faqCollapse(arrow, text, boxes, button) {
-  console.log(text.classList);
-  if (statusCollapse) {
+  // console.log(text.classList.value);
+  if (text.classList.value === "") {
     arrow.style.transform = "rotate(0deg)";
     text.classList.add("collapse_text");
-    statusCollapse = false;
+    // statusCollapse = false;
     boxes.classList.add("collapse_text");
     button.classList.add("collapse_text");
   } else {
     arrow.style.transform = "rotate(180deg)";
-    statusCollapse = true;
+    // statusCollapse = true;
     text.classList.remove("collapse_text");
     boxes.classList.remove("collapse_text");
     button.classList.remove("collapse_text");
