@@ -68,4 +68,4 @@ Implemented best review from our customers, FAQ'S, comparison between prices, se
 
 ### Deployed site
 
-[Deployed Link of website](https://im-debabrata-wrike.netlify.app/index.html)
+[Deployed Link of website](https://wrike9871.netlify.app/)
