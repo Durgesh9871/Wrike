@@ -1,4 +1,8 @@
- ## Wrike
+<h1 align="center">Wrike</h1>
+
+# Deployed URL 👉 [Click here](https://wrike9871.netlify.app/)
+
+## Group Project 
  
 Wrike is an easy-to-use tool for streamlining the internal project management and collaboration processes between team members, whether they're in the same office or separated by an ocean.
 
